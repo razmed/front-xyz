@@ -1,5 +1,14 @@
 // src/data/directionsData.js
 
+// Import des images locales
+import dir1 from '../images/dir1.png';
+import dir2 from '../images/dir2.png';
+import dir3 from '../images/dir3.png';
+import dir4 from '../images/dir4.png';
+import dir5 from '../images/dir5.png';
+import dir6 from '../images/dir6.png';
+import dir7 from '../images/dir7.png';
+
 const directionsData = [
   {
     id: 1,
@@ -8,7 +17,7 @@ const directionsData = [
     address: "Zone Industrielle El Hamiz, Alger, Algérie",
     phone: "+213 (0)23 XX XX XX",
     email: "contact.siege@sntp.dz",
-    image: "/images/directions/siege-alger.jpg",
+    image: dir1,  // Image locale
     description: "Siège principal de la SNTP"
   },
   {
@@ -18,7 +27,7 @@ const directionsData = [
     address: "Cheraga, Alger, Algérie",
     phone: "+213 (0)23 XX XX XX",
     email: "contact.cheraga@sntp.dz",
-    image: "/images/directions/cheraga.jpg",
+    image: dir2,  // Image locale
     description: "Direction régionale du centre"
   },
   {
@@ -28,7 +37,7 @@ const directionsData = [
     address: "Oran, Algérie",
     phone: "+213 (0)41 XX XX XX",
     email: "contact.oran@sntp.dz",
-    image: "/images/directions/oran.jpg",
+    image: dir3,  // Image locale
     description: "Direction régionale d'Oran"
   },
   {
@@ -38,7 +47,7 @@ const directionsData = [
     address: "Annaba, Algérie",
     phone: "+213 (0)38 XX XX XX",
     email: "contact.annaba@sntp.dz",
-    image: "/images/directions/annaba.jpg",
+    image: dir4,  // Image locale
     description: "Direction régionale d'Annaba"
   },
   {
@@ -48,7 +57,7 @@ const directionsData = [
     address: "Béjaïa, Algérie",
     phone: "+213 (0)34 XX XX XX",
     email: "contact.bejaia@sntp.dz",
-    image: "/images/directions/bejaia.jpg",
+    image: dir5,  // Image locale
     description: "Direction régionale de Béjaïa"
   },
   {
@@ -58,7 +67,7 @@ const directionsData = [
     address: "Ouargla, Algérie",
     phone: "+213 (0)29 XX XX XX",
     email: "contact.ouargla@sntp.dz",
-    image: "/images/directions/ouargla.jpg",
+    image: dir6,  // Image locale
     description: "Direction régionale d'Ouargla"
   },
   {
@@ -68,10 +77,9 @@ const directionsData = [
     address: "Tindouf, Algérie",
     phone: "+213 (0)49 XX XX XX",
     email: "contact.tindouf@sntp.dz",
-    image: "/images/directions/tindouf.jpg",
+    image: dir7,  // Image locale
     description: "Direction régionale de Tindouf"
   }
 ];
 
 export default directionsData;
-
