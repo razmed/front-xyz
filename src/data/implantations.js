@@ -86,38 +86,38 @@ export const implantations = [
   },
   {
     id: 8,
-    nom: "Unité de Production Alger",
+    nom: "SNTP Engineering",
     type: "unite",
     wilaya: "Alger",
-    ville: "Rouiba",
-    adresse: "Zone Industrielle Rouiba",
-    latitude: 36.7389,
-    longitude: 3.2847,
+    ville: "Dely Ibrahim",
+    adresse: "Villa 8 Bois des Cars 3, Dely Ibrahim",
+    latitude: 36.7474,
+    longitude: 2.9990,
     telephone: "+213 21 XX XX XX",
     email: "[email protected]"
   },
   {
     id: 9,
-    nom: "Unité de Constantine",
+    nom: "SNTP Anabibe",
     type: "unite",
-    wilaya: "Constantine",
-    ville: "Constantine",
-    adresse: "Zone industrielle Palma",
-    latitude: 36.3650,
-    longitude: 6.6147,
-    telephone: "+213 31 XX XX XX",
+    wilaya: "Chlef",
+    ville: "Fornaka",
+    adresse: "Zone Industrielles Usine ANABIB SNTP, Fornaka",
+    latitude: 36.1833,
+    longitude: 1.3667,
+    telephone: "+213 27 XX XX XX",
     email: "[email protected]"
   },
   {
     id: 10,
-    nom: "Unité de Sétif",
+    nom: "SNTP Logistique et Maintenance",
     type: "unite",
-    wilaya: "Sétif",
-    ville: "Sétif",
-    adresse: "Zone d'activité El Hidhab",
-    latitude: 36.1905,
-    longitude: 5.4140,
-    telephone: "+213 36 XX XX XX",
+    wilaya: "Boumerdès",
+    ville: "Khemis El Khechna",
+    adresse: "M87C+QH, Khemis El Khechna",
+    latitude: 36.6644,
+    longitude: 3.3214,
+    telephone: "+213 24 XX XX XX",
     email: "[email protected]"
   }
 ];
@@ -140,4 +140,3 @@ export const wilayas = [
   "Souk Ahras", "Tipaza", "Mila", "Aïn Defla", "Naâma",
   "Aïn Témouchent", "Ghardaïa", "Relizane"
 ];
-
