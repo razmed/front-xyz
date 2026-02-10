@@ -34,7 +34,7 @@ const Blog = () => {
         statut: 'publie',
         typeContenu: selectedTypeContenu,
         typeMedia: selectedTypeMedia,
-        search: searchTerm,
+        searchTitle: searchTerm, // ✅ Recherche uniquement dans les titres
         page: pagination.page,
         limit: pagination.limit,
         sortBy: 'datePublication',
@@ -171,7 +171,7 @@ const Blog = () => {
                 <input
                   type="text"
                   className="blog-search-input"
-                  placeholder="Rechercher..."
+                  placeholder="Rechercher par titre..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
@@ -473,4 +473,3 @@ const Blog = () => {
 };
 
 export default Blog;
-
