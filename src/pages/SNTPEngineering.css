@@ -1,0 +1,1120 @@
+/* ========================================
+   SNTP ENGINEERING - PALETTE SNTP UNIFORME
+======================================== */
+
+:root {
+  /* Palette SNTP Officielle */
+  --sntp-red-darker: #5A000D;
+  --sntp-red-dark: #810012;
+  --sntp-red: #C1121F;
+  --sntp-red-light: #D32F2F;
+  
+  --sntp-black: #200404;
+  --sntp-gray-darkest: #201d1d;
+  --sntp-gray-dark: #433f3f;
+  --sntp-gray: #6c7177;
+  --sntp-gray-light: #a5a9ae;
+  --sntp-gray-lighter: #E0E1DD;
+  --sntp-gray-lightest: #F5F5F5;
+  
+  --sntp-white: #FFFFFF;
+  --sntp-text-dark: #2C2C2C;
+
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
+  --font-main: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+  --font-heading: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+.SNTPEngineering-page {
+  font-family: var(--font-main);
+  color: var(--sntp-text-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+  background: var(--sntp-white);
+  max-width: 100vw;
+}
+
+/* ==================== HERO SECTION ==================== */
+.SNTPEngineering-hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 120px 20px 80px;
+  overflow: hidden;
+}
+
+.SNTPEngineering-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.SNTPEngineering-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(13, 27, 42, 0.85) 0%, rgba(13, 27, 42, 0.9) 40%, rgba(193, 18, 31, 0.25) 100%);
+  z-index: 1;
+}
+
+.SNTPEngineering-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.SNTPEngineering-hero-logo {
+  margin-bottom: 40px;
+  animation: zoomIn 1s ease-out;
+}
+
+.SNTPEngineering-hero-logo img {
+  max-width: 200px;
+  height: auto;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+.SNTPEngineering-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 900;
+  color: var(--sntp-white);
+  margin-bottom: 25px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.5);
+  line-height: 1.1;
+}
+
+.SNTPEngineering-hero-subtitle {
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  color: var(--sntp-white);
+  margin-bottom: 35px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.SNTPEngineering-hero-subtitle .highlight-text {
+  color: var(--sntp-red);
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(193, 18, 31, 0.6);
+}
+
+.SNTPEngineering-hero-description {
+  font-size: clamp(0.95rem, 1.6vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.95);
+  max-width: 950px;
+  margin: 0 auto;
+  line-height: 1.9;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  padding: 0 15px;
+}
+
+.SNTPEngineering-hero-description .bold-text {
+  font-weight: 700;
+  color: var(--sntp-white);
+}
+
+/* ==================== MAIN TITLE SECTION ==================== */
+.SNTPEngineering-main-title-section {
+  padding: 80px 20px 70px;
+  background: linear-gradient(180deg, var(--sntp-black) 0%, #000000 100%);
+  text-align: center;
+  border-bottom: 1px solid rgba(193, 18, 31, 0.3);
+}
+
+.SNTPEngineering-section-main-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  color: var(--sntp-red-darker);
+  margin-bottom: 20px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.SNTPEngineering-section-subtitle {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: var(--sntp-white);
+  margin-bottom: 25px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.SNTPEngineering-title-underline {
+  width: 100px;
+  height: 3px;
+  background: var(--sntp-red);
+  margin: 0 auto 30px;
+}
+
+.SNTPEngineering-section-intro-text {
+  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 850px;
+  margin: 0 auto;
+  font-style: italic;
+  line-height: 1.7;
+  padding: 0 20px;
+}
+
+/* ==================== DOMAINS SECTION ==================== */
+.SNTPEngineering-domains-section {
+  padding: 90px 20px;
+  background: var(--sntp-gray-lightest);
+}
+
+.SNTPEngineering-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.SNTPEngineering-domains-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 45px;
+  margin-top: 50px;
+}
+
+.SNTPEngineering-domain-card {
+  background: var(--sntp-white);
+  padding: 45px 35px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border-left: 5px solid var(--sntp-red);
+  position: relative;
+  overflow: hidden;
+}
+
+.SNTPEngineering-domain-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--sntp-red), var(--sntp-red-dark));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.SNTPEngineering-domain-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+  border-left-width: 5px;
+}
+
+.SNTPEngineering-domain-card:hover::before {
+  transform: scaleX(1);
+}
+
+.SNTPEngineering-domain-icon {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--sntp-red), var(--sntp-red-dark));
+  border-radius: 50%;
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(193, 18, 31, 0.3);
+  transition: var(--transition);
+}
+
+.SNTPEngineering-domain-card:hover .SNTPEngineering-domain-icon {
+  transform: rotate(360deg) scale(1.1);
+  box-shadow: 0 6px 16px rgba(193, 18, 31, 0.5);
+}
+
+.SNTPEngineering-domain-icon img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0) invert(1);
+}
+
+.SNTPEngineering-domain-title {
+  font-size: 1.6rem;
+  color: var(--sntp-text-dark);
+  margin-bottom: 22px;
+  font-weight: 800;
+  line-height: 1.3;
+  font-family: var(--font-heading);
+}
+
+.SNTPEngineering-domain-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.SNTPEngineering-domain-list li {
+  padding: 12px 0 12px 35px;
+  position: relative;
+  color: var(--sntp-gray-dark);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  transition: var(--transition);
+}
+
+.SNTPEngineering-domain-list li:hover {
+  color: var(--sntp-text-dark);
+  padding-left: 40px;
+}
+
+.SNTPEngineering-domain-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--sntp-red);
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: var(--transition);
+}
+
+.SNTPEngineering-domain-list li:hover::before {
+  left: 5px;
+  transform: scale(1.2);
+}
+
+.SNTPEngineering-domain-innovation {
+  margin-top: 25px;
+  padding: 18px 20px;
+  background: linear-gradient(135deg, #ffe8e8, #fff0f0);
+  border-left: 4px solid var(--sntp-red);
+  border-radius: 6px;
+  font-size: 1rem;
+  color: var(--sntp-text-dark);
+  box-shadow: var(--shadow-sm);
+}
+
+.SNTPEngineering-domain-innovation strong {
+  color: var(--sntp-red);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
+
+/* ==================== SOLUTIONS SECTION ==================== */
+.SNTPEngineering-solutions-section {
+  padding: 110px 20px;
+  background: linear-gradient(135deg, var(--sntp-black) 0%, #0d0d0d 40%, var(--sntp-red-dark) 100%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.SNTPEngineering-solutions-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.05)"/></svg>') repeat;
+  background-size: 20px 20px;
+  opacity: 0.5;
+}
+
+.SNTPEngineering-solutions-title {
+  font-size: clamp(2rem, 3.8vw, 3.2rem);
+  color: var(--sntp-white);
+  max-width: 950px;
+  margin: 0 auto 50px;
+  font-weight: 800;
+  line-height: 1.35;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+/* ==================== VALUES SECTION ==================== */
+.SNTPEngineering-values-section {
+  padding: 90px 20px;
+  background: var(--sntp-white);
+}
+
+.SNTPEngineering-values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 35px;
+  margin-top: 50px;
+}
+
+.SNTPEngineering-value-card {
+  text-align: center;
+  padding: 45px 30px;
+  background: var(--sntp-gray-lightest);
+  border-radius: 12px;
+  transition: var(--transition);
+  border-top: 4px solid var(--sntp-red);
+  position: relative;
+  overflow: hidden;
+}
+
+.SNTPEngineering-value-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  background: var(--sntp-red-dark);
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+}
+
+.SNTPEngineering-value-card:hover::before {
+  width: 100%;
+}
+
+.SNTPEngineering-value-card:hover {
+  background: linear-gradient(135deg, #fff 0%, #f9f9f9 100%);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-8px);
+}
+
+.SNTPEngineering-value-title {
+  font-size: 1.5rem;
+  color: var(--sntp-text-dark);
+  margin-bottom: 18px;
+  font-weight: 800;
+  font-family: var(--font-heading);
+}
+
+.SNTPEngineering-value-description {
+  font-size: 1.05rem;
+  color: var(--sntp-gray-dark);
+  line-height: 1.8;
+  font-style: italic;
+}
+
+/* ==================== TRANSFORM SECTION ==================== */
+.SNTPEngineering-transform-section {
+  padding: 110px 20px;
+  background: linear-gradient(180deg, var(--sntp-black) 0%, #000000 60%, #2a2a2a 100%);
+  text-align: center;
+  position: relative;
+}
+
+.SNTPEngineering-transform-subtitle {
+  font-size: 1.3rem;
+  color: var(--sntp-red);
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.SNTPEngineering-transform-title {
+  font-size: clamp(2.2rem, 4.2vw, 3.6rem);
+  color: var(--sntp-white);
+  margin-bottom: 35px;
+  font-weight: 800;
+  line-height: 1.2;
+  font-family: var(--font-heading);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.SNTPEngineering-transform-description {
+  font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 900px;
+  margin: 0 auto 50px;
+  line-height: 1.9;
+  padding: 0 20px;
+}
+
+.SNTPEngineering-transform-description strong {
+  color: var(--sntp-white);
+  font-weight: 800;
+}
+
+/* ==================== TEAM SECTION ==================== */
+.SNTPEngineering-team-section {
+  padding: 90px 20px;
+  background: var(--sntp-white);
+}
+
+.SNTPEngineering-team-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 70px;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.SNTPEngineering-team-text {
+  padding: 25px;
+}
+
+.SNTPEngineering-team-title {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  color: var(--sntp-text-dark);
+  margin-bottom: 30px;
+  font-weight: 800;
+  line-height: 1.25;
+  font-family: var(--font-heading);
+}
+
+.SNTPEngineering-team-description {
+  font-size: 1.15rem;
+  color: var(--sntp-gray-dark);
+  line-height: 1.9;
+}
+
+.SNTPEngineering-team-description strong {
+  color: var(--sntp-text-dark);
+  font-weight: 800;
+}
+
+.SNTPEngineering-team-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  border: 4px solid var(--sntp-red);
+}
+
+.SNTPEngineering-team-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, transparent 0%, rgba(193, 18, 31, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.SNTPEngineering-team-image:hover::after {
+  opacity: 1;
+}
+
+.SNTPEngineering-team-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: var(--transition);
+}
+
+.SNTPEngineering-team-image:hover img {
+  transform: scale(1.08);
+}
+
+/* ==================== ENGINEERS SECTION ==================== */
+.SNTPEngineering-engineers-section {
+  padding: 110px 20px;
+  background: linear-gradient(135deg, var(--sntp-black) 0%, #0d0d0d 60%, #2a2a2a 100%);
+  position: relative;
+}
+
+.SNTPEngineering-engineers-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 70px;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.SNTPEngineering-engineers-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  border: 4px solid var(--sntp-red);
+}
+
+.SNTPEngineering-engineers-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, transparent 0%, rgba(193, 18, 31, 0.15) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.SNTPEngineering-engineers-image:hover::after {
+  opacity: 1;
+}
+
+.SNTPEngineering-engineers-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: var(--transition);
+}
+
+.SNTPEngineering-engineers-image:hover img {
+  transform: scale(1.08);
+}
+
+.SNTPEngineering-engineers-info {
+  padding: 25px;
+  color: var(--sntp-white);
+}
+
+.SNTPEngineering-engineers-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--sntp-red), var(--sntp-red-dark));
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(193, 18, 31, 0.4);
+  transition: var(--transition);
+}
+
+.SNTPEngineering-engineers-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(193, 18, 31, 0.6);
+}
+
+.SNTPEngineering-engineers-quote {
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-bottom: 35px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 400;
+}
+
+.SNTPEngineering-engineers-subtitle {
+  font-size: 1.05rem;
+  color: var(--sntp-red);
+  margin-bottom: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.SNTPEngineering-engineers-title {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-family: var(--font-heading);
+}
+
+.SNTPEngineering-engineers-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.SNTPEngineering-engineers-list li {
+  padding: 14px 0 14px 35px;
+  position: relative;
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.95);
+  transition: var(--transition);
+}
+
+.SNTPEngineering-engineers-list li:hover {
+  padding-left: 40px;
+  color: var(--sntp-white);
+}
+
+.SNTPEngineering-engineers-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--sntp-red);
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: var(--transition);
+}
+
+.SNTPEngineering-engineers-list li:hover::before {
+  transform: scale(1.2);
+}
+
+/* ==================== CONTACT SECTION ==================== */
+.SNTPEngineering-contact-section {
+  padding: 90px 20px;
+  background: var(--sntp-gray-lightest);
+  text-align: center;
+}
+
+.SNTPEngineering-contact-title {
+  font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+  color: var(--sntp-text-dark);
+  margin-bottom: 60px;
+  font-weight: 800;
+  font-family: var(--font-heading);
+}
+
+.SNTPEngineering-contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.SNTPEngineering-contact-map-container {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 4px solid var(--sntp-red);
+}
+
+.SNTPEngineering-google-map {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: brightness(1.1) contrast(0.95) saturate(0.43);
+  transition: filter 0.3s ease;
+}
+
+.SNTPEngineering-contact-map-container:hover .SNTPEngineering-google-map {
+  filter: brightness(1) contrast(1) saturate(1);
+}
+
+.SNTPEngineering-contact-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: left;
+  align-items: stretch;
+}
+
+.SNTPEngineering-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.SNTPEngineering-contact-item {
+  background: var(--sntp-white);
+  padding: 35px 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border-left: 4px solid var(--sntp-red);
+}
+
+.SNTPEngineering-contact-item:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateX(5px);
+  border-left-width: 6px;
+}
+
+.SNTPEngineering-contact-label {
+  font-size: 1.3rem;
+  color: var(--sntp-red);
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-family: var(--font-heading);
+}
+
+.SNTPEngineering-contact-info {
+  font-size: 1.15rem;
+  color: var(--sntp-text-dark);
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.SNTPEngineering-contact-info a {
+  color: var(--sntp-text-dark);
+  text-decoration: none;
+  transition: var(--transition);
+  font-weight: 700;
+  position: relative;
+}
+
+.SNTPEngineering-contact-info a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--sntp-red);
+  transition: width 0.3s ease;
+}
+
+.SNTPEngineering-contact-info a:hover {
+  color: var(--sntp-red);
+}
+
+.SNTPEngineering-contact-info a:hover::after {
+  width: 100%;
+}
+
+.SNTPEngineering-map-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 auto;
+}
+
+.SNTPEngineering-map-button .button-icon {
+  fill: currentColor;
+}
+
+.SNTPEngineering-contact-cta-text {
+  font-size: 1.1rem;
+  color: var(--sntp-gray-dark);
+  line-height: 1.9;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  margin: 0 auto;
+  display: flex;
+  width: fit-content;
+}
+
+.SNTPEngineering-contact-cta-text strong {
+  color: var(--sntp-text-dark);
+  font-weight: 800;
+}
+
+/* ==================== BUTTONS ==================== */
+.SNTPEngineering-cta-button {
+  display: inline-block;
+  padding: 18px 45px;
+  font-size: 1.15rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+  box-shadow: var(--shadow-md);
+  font-family: var(--font-heading);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin: 0 auto;
+  display: flex;
+  width: fit-content;
+}
+
+.SNTPEngineering-cta-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease, height 0.5s ease;
+  z-index: -1;
+}
+
+.SNTPEngineering-cta-button:hover::before {
+  width: 400px;
+  height: 400px;
+}
+
+.SNTPEngineering-primary-button {
+  background: linear-gradient(135deg, var(--sntp-red), var(--sntp-red-dark));
+  color: white;
+}
+
+.SNTPEngineering-primary-button:hover {
+  background: linear-gradient(135deg, var(--sntp-red-dark), var(--sntp-red));
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(193, 18, 31, 0.4);
+}
+
+.SNTPEngineering-secondary-button {
+  background: linear-gradient(135deg, white, var(--sntp-gray-lightest));
+  color: var(--sntp-text-dark);
+  border: 3px solid white;
+}
+
+.SNTPEngineering-secondary-button:hover {
+  background: linear-gradient(135deg, var(--sntp-gray-lightest), white);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  color: var(--sntp-red);
+}
+
+/* ==================== ANIMATIONS ==================== */
+.SNTPEngineering-fade-in-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.SNTPEngineering-fade-in-section.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 1200px) {
+  .SNTPEngineering-domains-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+  }
+
+  .SNTPEngineering-container {
+    padding: 0 15px;
+  }
+
+  .SNTPEngineering-contact-layout {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .SNTPEngineering-contact-map-container {
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .SNTPEngineering-hero-section {
+    min-height: 70vh;
+    padding: 80px 20px 60px;
+    background-attachment: scroll;
+  }
+
+  .SNTPEngineering-domains-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .SNTPEngineering-team-content,
+  .SNTPEngineering-engineers-content {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .SNTPEngineering-values-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .SNTPEngineering-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .SNTPEngineering-contact-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .SNTPEngineering-contact-map-container {
+    height: 400px;
+  }
+
+  .SNTPEngineering-contact-info-wrapper {
+    text-align: center;
+  }
+
+  .SNTPEngineering-contact-item {
+    text-align: center;
+    border-left: none;
+    border-top: 4px solid var(--sntp-red);
+  }
+
+  .SNTPEngineering-contact-item:hover {
+    transform: translateY(-5px);
+    transform: translateX(0);
+  }
+
+  .SNTPEngineering-section-main-title {
+    font-size: 2.2rem;
+  }
+
+  .SNTPEngineering-domain-card {
+    padding: 35px 25px;
+  }
+
+  .SNTPEngineering-hero-logo img {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .SNTPEngineering-hero-logo img {
+    max-width: 160px;
+  }
+
+  .SNTPEngineering-cta-button {
+    padding: 15px 35px;
+    font-size: 1rem;
+  }
+
+  .SNTPEngineering-domain-icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .SNTPEngineering-hero-section {
+    min-height: 75vh;
+    padding: 70px 15px 50px;
+  }
+
+  .SNTPEngineering-main-title-section {
+    padding: 70px 15px 50px;
+  }
+
+  .SNTPEngineering-domains-section,
+  .SNTPEngineering-values-section,
+  .SNTPEngineering-team-section {
+    padding: 70px 15px;
+  }
+
+  .SNTPEngineering-solutions-section,
+  .SNTPEngineering-transform-section,
+  .SNTPEngineering-engineers-section {
+    padding: 90px 15px;
+  }
+
+  .SNTPEngineering-contact-map-container {
+    height: 350px;
+  }
+}
+
+/* ==================== PRINT & ACCESSIBILITY ==================== */
+@media print {
+  .SNTPEngineering-hero-section,
+  .SNTPEngineering-cta-button,
+  .SNTPEngineering-google-map {
+    display: none !important;
+  }
+
+  .SNTPEngineering-page {
+    background: white !important;
+    color: black !important;
+  }
+
+  * {
+    box-shadow: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.SNTPEngineering-cta-button:focus,
+.SNTPEngineering-contact-info a:focus {
+  outline: 3px solid var(--sntp-red);
+  outline-offset: 3px;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--sntp-red);
+  color: var(--sntp-white);
+}
+
+/* Focus states */
+*:focus-visible {
+  outline: 2px solid var(--sntp-red);
+  outline-offset: 2px;
+}
+

@@ -1,0 +1,1995 @@
+/* ====================
+   HOME PAGE STYLES - PALETTE SNTP OFFICIELLE
+==================== */
+
+:root {
+  /* Couleurs principales SNTP */
+  --sntp-red-darker: #5A000D;
+  --sntp-red-dark: #810012;
+  --sntp-red: #C1121F;
+  --sntp-red-light: #D32F2F;
+  --sntp-red-lighter: #E57373;
+  --sntp-red-lightest: #FFEBEE;
+  
+  /* Noir et gris */
+  --sntp-black: #0D1B2A;
+  --sntp-gray-darkest: #3b3b3b;
+  --sntp-gray-dark: #415A77;
+  --sntp-gray: #778DA9;
+  --sntp-gray-light: #B0C4DE;
+  --sntp-gray-lighter: #E0E1DD;
+  --sntp-gray-lightest: #F5F5F5;
+  
+  /* Blanc */
+  --sntp-white: #FFFFFF;
+  --sntp-white-soft: #FAFAFA;
+  
+  /* Couleurs fonctionnelles */
+  --sntp-success: #2E7D32;
+  --sntp-success-light: #E8F5E9;
+  --sntp-warning: #ED6C02;
+  --sntp-warning-light: #FFF4E5;
+  --sntp-error: #D32F2F;
+  --sntp-error-light: #FFEBEE;
+  --sntp-info: #0288D1;
+  --sntp-info-light: #E1F5FE;
+}
+
+.Home-page .hero-overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* ==================== Stats Overlap Section ==================== */
+.Home-stats-overlap-section {
+  position: relative;
+  z-index: 10;
+  padding: 0 0 80px 0;
+  margin-top: -40px;
+}
+
+.Home-stats-overlap-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+}
+
+.Home-stat-overlap-card {
+  background: var(--sntp-white);
+  padding: 3em 2em;
+  box-shadow: 0px 32px 10px -23px rgba(0, 0, 0, 0.39);
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.Home-stat-overlap-card:hover {
+  border-bottom-color: var(--sntp-red);
+  transform: translateY(-10px);
+  box-shadow: 0px 40px 20px -20px rgba(193, 18, 31, 0.4);
+}
+
+.Home-stat-overlap-icon {
+  font-size: 50px;
+  color: var(--sntp-red);
+  flex-shrink: 0;
+}
+
+.Home-stat-overlap-content {
+  flex: 1;
+}
+
+.Home-stat-overlap-number {
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 3em;
+  font-weight: 800;
+  color: var(--sntp-black);
+  line-height: 1;
+  margin-bottom: 0.2em;
+}
+
+.Home-stat-overlap-label {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--sntp-gray-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ==================== About Preview Section ==================== */
+.Home-about-preview-section {
+  background-color: var(--sntp-white);
+  padding: 80px 0;
+}
+
+.Home-about-preview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4em;
+  align-items: center;
+}
+
+.Home-about-preview-image {
+  position: relative;
+}
+
+.Home-about-preview-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.Home-experience-badge {
+  position: absolute;
+  bottom: -30px;
+  right: 30px;
+  background: linear-gradient(135deg, var(--sntp-red) 0%, var(--sntp-red-dark) 100%);
+  color: var(--sntp-white);
+  padding: 2em;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(193, 18, 31, 0.4);
+}
+
+.Home-experience-number {
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 3em;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 0.2em;
+}
+
+.Home-experience-text {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.Home-about-preview-content {
+  padding-left: 2em;
+}
+
+.Home-section-subtitle {
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--sntp-red);
+  margin-bottom: 0.5em;
+  letter-spacing: 2px;
+}
+
+.Home-section-title {
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--sntp-black);
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+.Home-section-divider {
+  width: 214px;
+  height: 6.5px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--sntp-red),
+    var(--sntp-red) 12.2px,
+    transparent 12.2px,
+    transparent 24.4px
+  );
+  margin-bottom: 1.5em;
+}
+
+.Home-about-preview-text {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  color: var(--sntp-gray-dark);
+  margin-bottom: 2em;
+}
+
+.Home-about-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 2em 0;
+}
+
+.Home-about-features-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 1em;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 1em;
+  line-height: 1.6em;
+  color: var(--sntp-black);
+}
+
+.Home-check-icon {
+  flex-shrink: 0;
+  margin-top: 4px;
+  color: var(--sntp-success);
+  font-size: 1.2em;
+}
+
+.Home-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 35px;
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: var(--sntp-red);
+  color: var(--sntp-white);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin-top: 1em;
+}
+
+.Home-btn-primary:hover {
+  background-color: var(--sntp-gray-darkest);
+  transform: translateX(5px);
+  box-shadow: 0 5px 20px rgba(193, 18, 31, 0.3);
+}
+
+.Home-btn-arrow {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.Home-btn-primary:hover .Home-btn-arrow {
+  transform: translateX(5px);
+}
+
+/* ==================== Partners Section - Carrousel Infini ==================== */
+.Home-partners-section {
+  background-color: var(--sntp-white);
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.Home-partners-carousel-wrapper {
+  margin-top: 4em;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.Home-partners-carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.Home-partners-carousel-track {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  will-change: transform;
+}
+
+.Home-partner-logo-item {
+  flex-shrink: 0;
+  width: 200px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 25px;
+  background: var(--sntp-white);
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.Home-partner-logo-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.Home-partner-logo-item img {
+  max-width: 100%;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.Home-partner-logo-item:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* ==================== Equipment Section - Design Professionnel Épuré ==================== */
+.Home-equipment-section {
+  background-color: var(--sntp-gray-lightest);
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.Home-equipment-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6em;
+  align-items: flex-start;
+  margin-top: 4em;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 3em;
+}
+
+.Home-equipment-bars-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding-right: 2em;
+}
+
+.Home-equipment-bar-wrapper {
+  width: 100%;
+}
+
+.Home-equipment-bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1.2em;
+}
+
+.Home-equipment-bar-label {
+  display: flex;
+  align-items: center;
+}
+
+.Home-equipment-category {
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: var(--sntp-black);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.Home-equipment-bar-value {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.Home-equipment-count {
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 2.5em;
+  font-weight: 800;
+  color: var(--sntp-red);
+  line-height: 1;
+  transition: all 0.5s ease;
+}
+
+.Home-equipment-unit {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--sntp-gray-dark);
+}
+
+.Home-equipment-bar-track {
+  width: 100%;
+  height: 14px;
+  background-color: #E8E8E8;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
+.Home-equipment-bar-fill {
+  height: 100%;
+  background: var(--sntp-red);
+  border-radius: 25px;
+  position: relative;
+  transition: width 1.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Home-equipment-bar-fill.animate {
+  animation: barShine 3s ease-in-out infinite;
+}
+
+@keyframes barShine {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+.Home-equipment-image-wrapper {
+  position: relative;
+  padding-left: 2em;
+}
+
+.Home-equipment-image-container {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.2);
+}
+
+.Home-equipment-main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.Home-equipment-image-container:hover .Home-equipment-main-image {
+  transform: scale(1.03);
+}
+
+.Home-equipment-image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to top,
+    rgba(13, 27, 42, 0.75) 0%,
+    rgba(13, 27, 42, 0.3) 50%,
+    transparent 100%
+  );
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 3.5em;
+}
+
+.Home-equipment-total-badge {
+  background: var(--sntp-red);
+  padding: 2em 3.5em;
+  border-radius: 8px;
+  text-align: center;
+  color: var(--sntp-white);
+  box-shadow: 0 10px 35px rgba(193, 18, 31, 0.5);
+  transition: all 0.3s ease;
+  min-width: 280px;
+}
+
+.Home-equipment-total-badge:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 45px rgba(193, 18, 31, 0.6);
+}
+
+.Home-equipment-total-label {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 0.95em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.8em;
+  opacity: 0.95;
+}
+
+.Home-equipment-total-number {
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 5em;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0.15em 0;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+  animation: countUp 1s ease-out;
+}
+
+.Home-equipment-total-text {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 0.95em;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-top: 0.5em;
+  letter-spacing: 0.5px;
+}
+
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==================== Career Section - Carrières chez SNTP ==================== */
+.Home-career-section {
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 120px 0;
+}
+
+.Home-career-image-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.Home-career-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.Home-career-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(13, 27, 42, 0.92) 0%,
+    rgba(13, 27, 42, 0.85) 50%,
+    rgba(13, 27, 42, 0.70) 100%
+  );
+}
+
+.Home-career-section .container-fluid {
+  position: relative;
+  z-index: 2;
+}
+
+.Home-career-content {
+  max-width: 700px;
+  color: var(--sntp-white);
+  padding-left: 3em;
+}
+
+.Home-career-accent-line {
+  width: 80px;
+  height: 4px;
+  background-color: #FFC107;
+  margin-bottom: 2em;
+}
+
+.Home-career-title {
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 3.5em;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.6em;
+  color: var(--sntp-white);
+}
+
+.Home-career-description {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 1.15em;
+  line-height: 1.8em;
+  margin-bottom: 2.5em;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 400;
+}
+
+.Home-career-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  padding: 16px 35px;
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-transform: none;
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--sntp-white);
+  border: 2px solid var(--sntp-white);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.Home-career-btn:hover {
+  background-color: var(--sntp-white);
+  color: var(--sntp-black);
+  transform: translateX(5px);
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3);
+}
+
+.Home-career-btn-arrow {
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+}
+
+.Home-career-btn:hover .Home-career-btn-arrow {
+  transform: translateX(5px);
+}
+
+/* ==================== News Section - Notre Actualité ==================== */
+.Home-news-section {
+  background-color: var(--sntp-white);
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.Home-news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4em;
+  padding: 0 2em;
+}
+
+.Home-news-title {
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--sntp-black);
+  margin: 0;
+}
+
+.Home-news-navigation {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.Home-news-dots {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.Home-news-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #D0D0D0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.Home-news-dot.active {
+  background-color: var(--sntp-black);
+  width: 14px;
+  height: 14px;
+}
+
+.Home-news-dot:hover {
+  background-color: var(--sntp-gray-dark);
+}
+
+.Home-news-arrows {
+  display: flex;
+  gap: 12px;
+}
+
+.Home-news-arrow-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--sntp-white);
+  border: 2px solid #E0E0E0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.2em;
+  color: var(--sntp-black);
+}
+
+.Home-news-arrow-btn:hover {
+  background-color: var(--sntp-black);
+  color: var(--sntp-white);
+  border-color: var(--sntp-black);
+  transform: scale(1.05);
+}
+
+.Home-news-carousel-wrapper {
+  overflow: hidden;
+  padding: 0 2em;
+  margin-bottom: 4em;
+}
+
+.Home-news-carousel-track {
+  display: flex;
+  gap: 2em;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Home-news-card {
+  flex: 0 0 calc(33.333% - 1.35em);
+  background-color: var(--sntp-white);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.Home-news-card:hover {
+  transform: translateY(-8px);
+}
+
+.Home-news-card-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.Home-news-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.Home-news-card:hover .Home-news-card-image img {
+  transform: scale(1.08);
+}
+
+.Home-news-card-content {
+  padding: 2em 0;
+}
+
+.Home-news-card-category {
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 0.85em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--sntp-gray-dark);
+  letter-spacing: 1.5px;
+  margin-bottom: 1em;
+}
+
+.Home-news-card-title {
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--sntp-black);
+  margin-bottom: 1em;
+  min-height: 84px;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.Home-news-card-meta {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 0.9em;
+  color: var(--sntp-gray-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.Home-news-card-separator {
+  color: #D0D0D0;
+}
+
+.Home-news-cta {
+  text-align: center;
+  padding: 0 2em;
+}
+
+.Home-news-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  padding: 16px 40px;
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: var(--sntp-red);
+  color: var(--sntp-white);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.Home-news-btn:hover {
+  background-color: var(--sntp-red-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(193, 18, 31, 0.3);
+}
+
+.Home-news-btn-arrow {
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+}
+
+.Home-news-btn:hover .Home-news-btn-arrow {
+  transform: translateX(5px);
+}
+
+/* ==================== Services Section - 4 Cartes ==================== */
+.Home-services-section {
+  background-color: var(--sntp-gray-lightest);
+  padding: 100px 0;
+}
+
+.Home-section-header-center {
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+.Home-section-divider-center {
+  width: 214px;
+  height: 6.5px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--sntp-red),
+    var(--sntp-red) 12.2px,
+    transparent 12.2px,
+    transparent 24.4px
+  );
+  margin: 0 auto 1.5em;
+}
+
+.Home-section-description {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  color: var(--sntp-gray-dark);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.Home-services-grid-four {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+}
+
+.Home-service-card-modern {
+  background: var(--sntp-white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 3px solid transparent;
+}
+
+.Home-service-card-modern:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-bottom-color: var(--sntp-red);
+}
+
+.Home-service-card-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.Home-service-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.Home-service-card-modern:hover .Home-service-card-image img {
+  transform: scale(1.1);
+}
+
+.Home-service-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(13, 27, 42, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.Home-service-card-modern:hover .Home-service-card-overlay {
+  opacity: 1;
+}
+
+.Home-service-card-icon-large {
+  font-size: 80px;
+  color: var(--sntp-white);
+}
+
+.Home-service-card-content {
+  padding: 2.5em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.Home-service-card-icon {
+  font-size: 45px;
+  color: var(--sntp-red);
+  margin-bottom: 1em;
+}
+
+.Home-service-card-title {
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--sntp-black);
+  margin-bottom: 0.5em;
+}
+
+.Home-service-card-divider {
+  width: 50px;
+  height: 3px;
+  background-color: var(--sntp-red);
+  margin-bottom: 1em;
+}
+
+.Home-service-card-text {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 1em;
+  line-height: 1.6em;
+  color: var(--sntp-gray-dark);
+  margin-bottom: 1.5em;
+  flex: 1;
+}
+
+.Home-service-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--sntp-red);
+  transition: all 0.3s ease;
+}
+
+.Home-service-card-modern:hover .Home-service-card-link {
+  color: var(--sntp-gray-darkest);
+  gap: 15px;
+}
+
+.Home-service-arrow {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.3s ease;
+}
+
+.Home-service-card-modern:hover .Home-service-arrow {
+  transform: translateX(5px);
+}
+
+/* ==================== Projects Showcase Section ==================== */
+.Home-projects-showcase-section {
+  background-color: var(--sntp-white);
+  padding: 100px 0;
+}
+
+.Home-projects-grid-three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  margin-top: 3em;
+}
+
+.Home-project-card-modern {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.Home-project-card-modern:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.Home-project-card-modern img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.Home-project-card-modern:hover img {
+  transform: scale(1.1);
+}
+
+.Home-project-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2em;
+  background: linear-gradient(to top, rgba(13, 27, 42, 0.95) 0%, rgba(13, 27, 42, 0) 100%);
+  color: var(--sntp-white);
+}
+
+.Home-project-card-title {
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.Home-project-card-desc {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 1em;
+  margin-bottom: 1em;
+  opacity: 0.95;
+}
+
+.Home-project-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--sntp-red-lighter);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.Home-project-card-link:hover {
+  gap: 15px;
+  color: var(--sntp-white);
+}
+
+.Home-arrow-right {
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+}
+
+.Home-project-card-link:hover .Home-arrow-right {
+  transform: translateX(5px);
+}
+
+.Home-projects-cta-center {
+  text-align: center;
+  margin-top: 3em;
+}
+
+/* ==================== CTA Section ==================== */
+.Home-cta-section-home {
+  background: linear-gradient(135deg, var(--sntp-red) 0%, var(--sntp-red-dark) 100%);
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.Home-cta-section-home::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+}
+
+.Home-cta-section-home::after {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+}
+
+.Home-cta-content-home {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--sntp-white);
+}
+
+.Home-cta-title-home {
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 3.5em;
+  font-weight: 800;
+  margin-bottom: 0.5em;
+}
+
+.Home-cta-text-home {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 1.3em;
+  line-height: 1.8em;
+  margin-bottom: 2em;
+  opacity: 0.95;
+}
+
+.Home-btn-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 40px;
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: var(--sntp-white);
+  color: var(--sntp-red);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.Home-btn-white:hover {
+  background-color: var(--sntp-gray-darkest);
+  color: var(--sntp-white);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ==================== Responsive Design ==================== */
+@media (max-width: 1400px) {
+  .Home-services-grid-four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Home-equipment-content {
+    padding: 0 2em;
+    gap: 5em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Home-stats-overlap-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Home-projects-grid-three {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Home-equipment-content {
+    grid-template-columns: 1fr;
+    gap: 4em;
+    padding: 0 2em;
+  }
+
+  .Home-equipment-bars-container {
+    padding-right: 0;
+  }
+
+  .Home-equipment-image-wrapper {
+    padding-left: 0;
+  }
+
+  .Home-equipment-image-container {
+    height: 550px;
+  }
+
+  .Home-career-content {
+    padding-left: 2em;
+  }
+
+  .Home-career-title {
+    font-size: 3em;
+  }
+
+  .Home-career-description {
+    font-size: 1.1em;
+  }
+
+  .Home-news-card {
+    flex: 0 0 calc(50% - 1em);
+  }
+
+  .Home-news-carousel-track {
+    gap: 1.5em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Home-about-preview-grid {
+    grid-template-columns: 1fr;
+    gap: 3em;
+  }
+
+  .Home-about-preview-image {
+    order: -1;
+  }
+
+  .Home-about-preview-content {
+    padding-left: 0;
+  }
+
+  .Home-experience-badge {
+    right: 20px;
+    bottom: -20px;
+    padding: 1.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .Home-page {
+    padding-top: 70px;
+  }
+
+  .Home-stats-overlap-section {
+    margin-top: 0;
+    padding: 40px 0;
+  }
+
+  .Home-stats-overlap-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+  }
+
+  .Home-stat-overlap-card {
+    padding: 2em 1.5em;
+  }
+
+  .Home-section-title {
+    font-size: 2.5em;
+  }
+
+  .Home-partners-section {
+    padding: 60px 0;
+  }
+
+  .Home-partner-logo-item {
+    width: 150px;
+    height: 100px;
+    margin: 0 15px;
+    padding: 15px;
+  }
+
+  .Home-partner-logo-item img {
+    max-height: 60px;
+  }
+
+  .Home-equipment-section {
+    padding: 60px 0;
+  }
+
+  .Home-equipment-content {
+    gap: 3em;
+    padding: 0 1.5em;
+  }
+
+  .Home-equipment-bars-container {
+    gap: 2.5em;
+  }
+
+  .Home-equipment-bar-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6em;
+    margin-bottom: 1em;
+  }
+
+  .Home-equipment-category {
+    font-size: 1.2em;
+  }
+
+  .Home-equipment-count {
+    font-size: 2em;
+  }
+
+  .Home-equipment-bar-track {
+    height: 12px;
+  }
+
+  .Home-equipment-image-container {
+    height: 450px;
+    border-radius: 15px;
+  }
+
+  .Home-equipment-image-overlay {
+    padding: 2.5em;
+  }
+
+  .Home-equipment-total-badge {
+    padding: 1.8em 3em;
+    min-width: auto;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .Home-equipment-total-number {
+    font-size: 4em;
+  }
+
+  .Home-equipment-total-label {
+    font-size: 0.9em;
+  }
+
+  .Home-equipment-total-text {
+    font-size: 0.9em;
+  }
+
+  .Home-career-section {
+    min-height: 500px;
+    padding: 80px 0;
+  }
+
+  .Home-career-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(13, 27, 42, 0.88) 0%,
+      rgba(13, 27, 42, 0.92) 100%
+    );
+  }
+
+  .Home-career-content {
+    max-width: 100%;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  .Home-career-accent-line {
+    width: 60px;
+    height: 3px;
+    margin-bottom: 1.5em;
+  }
+
+  .Home-career-title {
+    font-size: 2.5em;
+  }
+
+  .Home-career-description {
+    font-size: 1.05em;
+    line-height: 1.7em;
+    margin-bottom: 2em;
+  }
+
+  .Home-career-btn {
+    padding: 14px 30px;
+    font-size: 1em;
+  }
+
+  .Home-news-section {
+    padding: 60px 0;
+  }
+
+  .Home-news-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+    margin-bottom: 3em;
+    padding: 0 1.5em;
+  }
+
+  .Home-news-title {
+    font-size: 2.5em;
+  }
+
+  .Home-news-navigation {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .Home-news-arrow-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1em;
+  }
+
+  .Home-news-carousel-wrapper {
+    padding: 0 1.5em;
+    margin-bottom: 3em;
+  }
+
+  .Home-news-card {
+    flex: 0 0 100%;
+  }
+
+  .Home-news-card-image {
+    height: 250px;
+  }
+
+  .Home-news-card-content {
+    padding: 1.5em 0;
+  }
+
+  .Home-news-card-title {
+    font-size: 1.4em;
+    min-height: auto;
+  }
+
+  .Home-news-cta {
+    padding: 0 1.5em;
+  }
+
+  .Home-news-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 30px;
+  }
+
+  .Home-services-grid-four {
+    grid-template-columns: 1fr;
+  }
+
+  .Home-projects-grid-three {
+    grid-template-columns: 1fr;
+  }
+
+  .Home-project-card-modern img {
+    height: 350px;
+  }
+
+  .Home-cta-title-home {
+    font-size: 2.5em;
+  }
+
+  .Home-cta-text-home {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 668px) {
+  .Home-stat-overlap-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Home-section-title {
+    font-size: 2em;
+  }
+
+  .Home-section-subtitle {
+    font-size: 1.2em;
+  }
+
+  .Home-about-preview-section,
+  .Home-services-section,
+  .Home-projects-showcase-section,
+  .Home-cta-section-home {
+    padding: 60px 0;
+  }
+
+  .Home-service-card-content {
+    padding: 2em 1.5em;
+  }
+
+  .Home-project-card-content {
+    padding: 1.5em;
+  }
+
+  .Home-cta-title-home {
+    font-size: 2em;
+  }
+
+  .Home-btn-primary,
+  .Home-btn-white {
+    padding: 12px 25px;
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 480px) {
+  .Home-partners-section {
+    padding: 40px 0;
+  }
+
+  .Home-partner-logo-item {
+    width: 120px;
+    height: 80px;
+    margin: 0 10px;
+    padding: 10px;
+  }
+
+  .Home-partner-logo-item img {
+    max-height: 50px;
+  }
+
+  .Home-equipment-section {
+    padding: 40px 0;
+  }
+
+  .Home-equipment-content {
+    padding: 0 1em;
+    gap: 2.5em;
+  }
+
+  .Home-equipment-bars-container {
+    gap: 2em;
+  }
+
+  .Home-equipment-category {
+    font-size: 1.1em;
+  }
+
+  .Home-equipment-count {
+    font-size: 1.8em;
+  }
+
+  .Home-equipment-unit {
+    font-size: 0.9em;
+  }
+
+  .Home-equipment-bar-track {
+    height: 10px;
+  }
+
+  .Home-equipment-image-container {
+    height: 400px;
+    border-radius: 12px;
+  }
+
+  .Home-equipment-image-overlay {
+    padding: 2em;
+  }
+
+  .Home-equipment-total-badge {
+    padding: 1.5em 2.5em;
+  }
+
+  .Home-equipment-total-number {
+    font-size: 3.5em;
+  }
+
+  .Home-equipment-total-label {
+    font-size: 0.85em;
+    letter-spacing: 1px;
+  }
+
+  .Home-equipment-total-text {
+    font-size: 0.85em;
+  }
+
+  .Home-career-section {
+    min-height: 450px;
+    padding: 60px 0;
+  }
+
+  .Home-career-content {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .Home-career-accent-line {
+    width: 50px;
+    margin-bottom: 1.2em;
+  }
+
+  .Home-career-title {
+    font-size: 2em;
+  }
+
+  .Home-career-description {
+    font-size: 1em;
+    line-height: 1.6em;
+  }
+
+  .Home-career-btn {
+    padding: 12px 25px;
+    font-size: 0.95em;
+  }
+
+  .Home-news-section {
+    padding: 40px 0;
+  }
+
+  .Home-news-header {
+    padding: 0 1em;
+    margin-bottom: 2em;
+  }
+
+  .Home-news-title {
+    font-size: 2em;
+  }
+
+  .Home-news-dots {
+    gap: 8px;
+  }
+
+  .Home-news-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .Home-news-dot.active {
+    width: 12px;
+    height: 12px;
+  }
+
+  .Home-news-arrow-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1em;
+  }
+
+  .Home-news-carousel-wrapper {
+    padding: 0 1em;
+  }
+
+  .Home-news-card-image {
+    height: 220px;
+  }
+
+  .Home-news-card-title {
+    font-size: 1.3em;
+  }
+
+  .Home-news-cta {
+    padding: 0 1em;
+  }
+
+  .Home-news-btn {
+    padding: 12px 25px;
+    font-size: 1em;
+  }
+}
+/* ==================== Section: Quality of Our People - Vidéo Background ==================== */
+.Home-people-video-section {
+  position: relative;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.Home-people-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.Home-people-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.Home-people-video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.65) 50%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+  z-index: 2;
+}
+
+.Home-people-content-grid {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6em;
+  align-items: center;
+}
+
+.Home-people-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.Home-people-title {
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 3.2em;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--sntp-white);
+  margin: 0;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.Home-people-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background-color: var(--sntp-red);
+}
+
+.Home-people-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+.Home-people-description {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+.Home-people-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  text-decoration: none;
+  max-width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.Home-people-btn-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--sntp-red);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(193, 18, 31, 0.4);
+}
+
+.Home-people-btn-icon svg {
+  font-size: 1.3em;
+  color: var(--sntp-white);
+  transition: transform 0.3s ease;
+}
+
+.Home-people-btn-text {
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--sntp-white);
+  padding: 0 0 0 20px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.Home-people-btn:hover .Home-people-btn-icon {
+  background-color: var(--sntp-red-dark);
+  transform: scale(1.1);
+}
+
+.Home-people-btn:hover .Home-people-btn-icon svg {
+  transform: translateX(5px);
+}
+
+.Home-people-btn:hover .Home-people-btn-text {
+  color: var(--sntp-red);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .Home-people-video-section {
+    min-height: 450px;
+    padding: 80px 0;
+  }
+
+  .Home-people-content-grid {
+    grid-template-columns: 1fr;
+    gap: 3em;
+    text-align: center;
+  }
+
+  .Home-people-title {
+    font-size: 2.5em;
+  }
+
+  .Home-people-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .Home-people-btn {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .Home-people-video-section {
+    min-height: 400px;
+    padding: 60px 0;
+  }
+
+  .Home-people-title {
+    font-size: 2em;
+  }
+
+  .Home-people-description {
+    font-size: 1em;
+  }
+
+  .Home-people-btn-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .Home-people-btn-text {
+    font-size: 1em;
+    padding-left: 15px;
+  }
+}
+/* ==================== Section: Contactez-nous ==================== */
+.Home-contact-section {
+  background-color: var(--sntp-red);
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%);
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.Home-contact-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.Home-contact-title {
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 3.2em;
+  font-weight: 700;
+  color: var(--sntp-white);
+  margin: 0 0 20px 0;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.Home-contact-subtitle {
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0 0 25px 0;
+  letter-spacing: 0.5px;
+}
+
+.Home-contact-text {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 40px 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Home-btn-white-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 40px;
+  background-color: var(--sntp-white);
+  color: var(--sntp-red);
+  font-family: "Rajdhani", Sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.Home-btn-white-contact svg {
+  font-size: 0.9em;
+  transition: transform 0.3s ease;
+}
+
+.Home-btn-white-contact:hover {
+  background-color: var(--sntp-dark);
+  color: var(--sntp-white);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.Home-btn-white-contact:hover svg {
+  transform: translateX(5px);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .Home-contact-section {
+    padding: 80px 0;
+  }
+
+  .Home-contact-title {
+    font-size: 2.5em;
+  }
+
+  .Home-contact-subtitle {
+    font-size: 1.6em;
+  }
+
+  .Home-contact-text {
+    font-size: 1.05em;
+  }
+
+  .Home-btn-white-contact {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .Home-contact-section {
+    padding: 60px 0;
+  }
+
+  .Home-contact-title {
+    font-size: 2em;
+  }
+
+  .Home-contact-subtitle {
+    font-size: 1.4em;
+  }
+
+  .Home-contact-text {
+    font-size: 1em;
+    padding: 0 20px;
+  }
+
+  .Home-btn-white-contact {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+    padding: 15px 30px;
+    font-size: 1.05em;
+  }
+}
+
+@media (max-width: 576px) {
+  .Home-contact-title {
+    font-size: 1.7em;
+  }
+
+  .Home-contact-subtitle {
+    font-size: 1.2em;
+  }
+
+  .Home-btn-white-contact {
+    font-size: 1em;
+    padding: 14px 25px;
+  }
+}
