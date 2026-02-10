@@ -94,7 +94,8 @@ export const implantations = [
     latitude: 36.7474,
     longitude: 2.9990,
     telephone: "+213 21 XX XX XX",
-    email: "[email protected]"
+    email: "[email protected]",
+    image: require('../images/enginer.png')
   },
   {
     id: 9,
@@ -106,7 +107,8 @@ export const implantations = [
     latitude: 36.1833,
     longitude: 1.3667,
     telephone: "+213 27 XX XX XX",
-    email: "[email protected]"
+    email: "[email protected]",
+    image: require('../images/anabibe.png')
   },
   {
     id: 10,
@@ -118,7 +120,8 @@ export const implantations = [
     latitude: 36.6644,
     longitude: 3.3214,
     telephone: "+213 24 XX XX XX",
-    email: "[email protected]"
+    email: "[email protected]",
+    image: require('../images/logistique.png')
   }
 ];
 
